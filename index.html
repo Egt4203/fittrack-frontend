@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitTrack — Calorie & Fitness</title>
+    <meta name="description" content="A simple calorie & fitness tracker. No canvas used, SVG only." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>FitTrack</h1>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><button class="nav-btn" data-view="dashboard" aria-current="page">Today</button></li>
+          <li><button class="nav-btn" data-view="log">Log</button></li>
+          <li><button class="nav-btn" data-view="history">History</button></li>
+          <li><button class="nav-btn" data-view="goals">Goals</button></li>
+          <li><button class="nav-btn" data-view="profile">Profile</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="app" class="app"></main>
+
+    <template id="toast-template">
+      <div class="toast" role="status" aria-live="polite"></div>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
